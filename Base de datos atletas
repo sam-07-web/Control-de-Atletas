@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Atletas</title>
+</head>
+<body>
+    <h1>Registro de Atletas</h1>
+    <form id="dataForm">
+        <input type="hidden" id="index" value="">
+        <input type="text" id="codigo" placeholder="Código" required>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="genero" placeholder="Género" required>
+        <input type="text" id="cui" placeholder="CUI" required>
+        <input type="text" id="pasaporte" placeholder="No. Pasaporte" required>
+        <input type="date" id="fechaNacimiento" required>
+        <input type="text" id="departamento" placeholder="Departamento" required>
+        <input type="text" id="division" placeholder="División" required>
+        <input type="text" id="categoria" placeholder="Categoría" required>
+        <input type="text" id="estilo" placeholder="Estilo" required>
+        <input type="text" id="resultadosNacionales" placeholder="Resultados Nacionales" required>
+        <input type="text" id="resultadosInternacionales" placeholder="Resultados Internacionales" required>
+        <input type="file" id="foto" accept="image/*">
+        <button type="submit">Guardar</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Buscar por nombre" oninput="searchData()">
+    <ul id="dataList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
